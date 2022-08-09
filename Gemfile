@@ -48,6 +48,13 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"
 
+#validation
+# Rails 5.2 and Rails 6
+gem 'active_storage_validations'
+
+# Optional, to use :dimension validator or :aspect_ratio validator
+gem 'mini_magick', '>= 4.9.5'
+
 #devise
 gem 'devise'
 
