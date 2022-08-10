@@ -1,10 +1,11 @@
+# frozen_string_literal: true
+
 class GroupsController < ApplicationController
   def index
     @categories = current_user.groups
   end
 
-  def new
-  end
+  def new; end
 
   def show
     id = params[:id]
