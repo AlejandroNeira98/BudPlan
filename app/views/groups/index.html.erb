@@ -1,7 +1,11 @@
 <% @categories.each do |category| %>
-  <div style:"display:flex">
-    <%= image_tag(category.icon, style:"width:20px; height:20px")%>
-    <p> <%= category.name %> </p>
-    <p> <%= category.amount %> </p>
-  </div>
+  <%= link_to("/groups/show/#{category.id}") do%>
+    <div style:"display:flex">
+      <%= image_tag(category.icon, style:"width:20px; height:20px")%>
+      <p> <%= category.name %> </p>
+      <p> <%= category.amount %> </p>
+    </div>
+  <% end %>
 <% end %>
+
+<%= link_to "add a new category", groups_new_path %>
