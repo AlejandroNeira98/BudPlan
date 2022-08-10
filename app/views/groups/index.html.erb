@@ -1,2 +1,7 @@
-<h1>Groups#index</h1>
-<p>Find me in app/views/groups/index.html.erb</p>
+<% @categories.each do |category| %>
+  <div style:"display:flex">
+    <%= image_tag(category.icon, style:"width:20px; height:20px")%>
+    <p> <%= category.name %> </p>
+    <p> <%= category.amount %> </p>
+  </div>
+<% end %>
