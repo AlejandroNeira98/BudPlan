@@ -1,9 +1,9 @@
 <% @categories.each do |category| %>
   <%= link_to("/groups/show/#{category.id}") do%>
-    <div style:"display:flex">
-      <%= image_tag(category.icon, style:"width:20px; height:20px")%>
+    <div style="display:flex">
+      <%= image_tag(category.icon, style:"width:100px; height:100px")%>
       <p> <%= category.name %> </p>
-      <p> <%= category.amount %> </p>
+      <p> <%= category.total %> </p>
     </div>
   <% end %>
 <% end %>

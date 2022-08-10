@@ -9,6 +9,6 @@ class GroupsController < ApplicationController
   def show
     id = params[:id]
     @category = Group.find(id)
-    @deals = category.deals.order('deals.created_at DESC')
+    @deals = @category.deals.order('deals.created_at DESC')
   end
 end
