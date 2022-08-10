@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Deal < ApplicationRecord
   validate :name?
   validate :amount?
@@ -8,7 +10,7 @@ class Deal < ApplicationRecord
   def group?
     errors.add(:base, 'must add at least one category') if groups.empty?
   end
-  
+
   def name?
     errors.add(:base, 'must have name') if name.nil?
   end
