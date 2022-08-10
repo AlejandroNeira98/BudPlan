@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'groups/index'
   get 'groups/new'
   get 'groups/show/:id', to: 'groups#show'
+  post 'groups/create'
+  post 'deals/create'
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

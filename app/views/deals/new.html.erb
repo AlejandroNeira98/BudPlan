@@ -1,2 +1,27 @@
 <h1>Deals#new</h1>
 <p>Find me in app/views/deals/new.html.erb</p>
+
+<%= form_with(model: @deal, url: deals_create_path ) do |form| %>
+
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :amount %>
+    <%= form.number_field :amount, step: :any %>
+  </div>
+
+  <div>
+    <p>Select at least one category</p>
+    <ul>
+      <%= form.collection_check_boxes(:groups, @categories, :id, :name) do |g| %>
+        <li>
+          <%= g.label { g.check_box + g.text } %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <%= form.submit "SUBMIT" %>
+<% end %>

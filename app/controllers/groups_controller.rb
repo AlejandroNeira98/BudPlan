@@ -5,11 +5,23 @@ class GroupsController < ApplicationController
     @categories = current_user.groups
   end
 
-  def new; end
-
   def show
     id = params[:id]
     @category = Group.find(id)
     @deals = @category.deals.order('deals.created_at DESC')
+  end
+
+  def new
+    @group = Group.new
+  end
+
+  def create
+    redirect_to groups_index_path if Group.create(**group_params, user_id: current_user.id)
+  end
+
+  private
+
+  def group_params
+    params.require(:group).permit(:name, :icon)
   end
 end
