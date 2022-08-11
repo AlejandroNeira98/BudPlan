@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  root 'groups#index'
   get 'deals/new'
   get 'groups/index'
   get 'groups/new'

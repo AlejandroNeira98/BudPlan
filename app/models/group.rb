@@ -9,6 +9,6 @@ class Group < ApplicationRecord
   after_initialize :init
 
   def init
-    self.total ||= 0
+    self.total ||= 0.0
   end
 end

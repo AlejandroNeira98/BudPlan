@@ -1,6 +1,6 @@
 <% @categories.each do |category| %>
   <%= link_to("/groups/show/#{category.id}") do%>
-    <div style="display:flex; justify-content: space-between ;height:100px">
+    <div class="card">
     <div style="display:flex; max-height:100%">
       <div style="max-width:100px">
         <%= image_tag(category.icon, style:"width:100%; height:100%")%>
@@ -8,7 +8,11 @@
     
       <p> <%= category.name %> </p>
     </div>
-    <p> $<%= category.total %> </p>
+    <% total = 0.0 %>
+    <% category.deals.each do |deal|  %>
+      <% total += deal.amount %>
+    <% end %>
+    <p> $<%= total %> </p>
   </div>
   <% end %>
 <% end %>

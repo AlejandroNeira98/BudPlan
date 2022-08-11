@@ -15,10 +15,7 @@
 </header>
 
 <script>
-  const hamburger = document.querySelector('.hamburger');
-  const navLink = document.querySelector('.nav__link');
-
-  hamburger.addEventListener('click', () => {
-    navLink.classList.toggle('hide');
+  document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.nav__link').classList.toggle('hide');
   });
 </script>
