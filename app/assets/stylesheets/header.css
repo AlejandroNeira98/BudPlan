@@ -41,6 +41,10 @@ body {
   display: block;
   text-align: center;
   padding: 10px 0;
+  font-family: 'Proxima', sans-serif;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
 }
 
 .hide {

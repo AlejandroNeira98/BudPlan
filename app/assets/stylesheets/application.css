@@ -61,3 +61,13 @@ a {
   font-weight: bold;
   color: black;
 }
+
+.category {
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+h1 {
+  font-family: 'ProximaBold', sans-serif;
+  margin: 10px;
+}

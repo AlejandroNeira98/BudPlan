@@ -1,6 +1,8 @@
-<%= link_to "(<)", groups_index_path %>
-
-<p> Total: <%= @total %> </p>
+<div style="display:flex" class="category">
+  <%= link_to "(<)", groups_index_path %>
+  <h1> <%= @category.name %> </h1>
+  <p> Total: <%= @total %> </p>
+</div>
 
 <% @deals.each do |deal| %>
   <div  class="card">
