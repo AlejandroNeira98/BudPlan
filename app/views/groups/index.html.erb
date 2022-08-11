@@ -6,13 +6,13 @@
         <%= image_tag(category.icon, style:"width:100%; height:100%")%>
       </div>
     
-      <p> <%= category.name %> </p>
+      <p class="content"> <%= category.name %> </p>
     </div>
     <% total = 0.0 %>
     <% category.deals.each do |deal|  %>
       <% total += deal.amount %>
     <% end %>
-    <p> $<%= total %> </p>
+    <p class="quantity"> $<%= total %> </p>
   </div>
   <% end %>
 <% end %>

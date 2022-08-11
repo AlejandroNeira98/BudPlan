@@ -8,10 +8,12 @@
       <div style="max-width:100px">
         <%= image_tag(@category.icon, style:"width:100%; height:100%")%>
       </div>
-    
-      <p> <%= deal.name %> </p>
+      <div class="content">
+        <p> <%= deal.name %> </p>
+        <p class="date"> <%= deal.created_at.strftime("%d %B %Y") %> </p>
+      </div>
     </div>
-    <p> $<%= deal.amount %> </p>
+    <p class="quantity"> $<%= deal.amount %> </p>
   </div>
 <% end %>
 
