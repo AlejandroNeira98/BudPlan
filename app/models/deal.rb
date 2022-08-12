@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Deal < ApplicationRecord
   validate :name?
   validate :amount?
