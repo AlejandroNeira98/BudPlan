@@ -1,5 +1,5 @@
 <div style="display:flex" class="category">
-  <%= link_to "(<)", groups_index_path %>
+  <%= link_to "<", groups_index_path, class:"back" %>
   <h1> <%= @category.name %> </h1>
   <p> Total: <%= @total %> </p>
 </div>
@@ -19,4 +19,4 @@
   </div>
 <% end %>
 
-<%= link_to "add a new transaction", deals_new_path %>
+<%= link_to "add a new transaction", deals_new_path, class:"btn" %>

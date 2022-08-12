@@ -71,3 +71,23 @@ h1 {
   font-family: 'ProximaBold', sans-serif;
   margin: 10px;
 }
+
+.btn {
+  background-color: #3778c2;
+  color: white;
+  padding: 5px;
+  float: right;
+  border: solid white;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.back {
+  background-color: #3778c2;
+  color: white;
+  border: solid white;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0 5px;
+}
