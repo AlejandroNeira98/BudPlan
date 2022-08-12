@@ -1,6 +1,10 @@
 # BudPlan
 
-> This project consists in the creation of a full-stack web application where the users are able to create categories, upload images for those categories and add transactions for each category.
+> This project consists in the creation of a full-stack web application where the users are able to create categories, upload images for those categories and add transactions for each category (thought mainly for mobile).
+
+## Live demo
+
+[Demo](https://radiant-cove-31580.herokuapp.com/splash)
 
 ## Built With
 
@@ -20,13 +24,13 @@ To get a local copy follow these simple example steps.
 
 3.- Install the project's dependencies by running this command: `bundle install`
 
-5.- Go to config/database.yml under development specify the database name, owner(username), and password
+4.- Go to config/database.yml under development specify the database name, owner(username), and password
 
-6.- To create a database from rails to PostgreSQL run 'rails db:create'
+5.- To create a database from rails to PostgreSQL run 'rails db:create'
 
-7.- To migrate from rails to your database run 'rails db:migrate'
+6.- To migrate from rails to your database run 'rails db:migrate'
 
-8.- To start the application run `rails s`
+7.- To start the application run `rails s`
 
 ## Author
 
