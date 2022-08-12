@@ -2,7 +2,7 @@
 
 class DealsController < ApplicationController
   before_action :authenticate_user!
-  
+
   def new
     @deal = Deal.new
     @categories = current_user.groups.all
