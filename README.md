@@ -39,6 +39,8 @@ To get a local copy follow these simple example steps.
 - Twitter: [@JANP_19](https://twitter.com/JANP_19)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/alejandro-neira-pachon/) 
 
+## Acknowledgments
+- Credit to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) the author of the original design.
 
 ## 🤝 Contributing
 
