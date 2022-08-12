@@ -1,4 +1,7 @@
-<h1>Add a new category</h1>
+<div class="category">
+  <%= link_to "<", groups_index_path, class:"back" %>
+  <h1>Add a new category</h1>
+</div>
 
 <%= form_with(model: @group, url: groups_create_path ) do |form| %>
 
