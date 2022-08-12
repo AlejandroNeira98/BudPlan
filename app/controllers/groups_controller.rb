@@ -2,7 +2,7 @@
 
 class GroupsController < ApplicationController
   def index
-    @categories = current_user.groups
+    @categories = current_user.groups.includes(:deals, icon_attachment: :blob)
   end
 
   def show
