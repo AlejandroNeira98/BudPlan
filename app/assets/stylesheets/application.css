@@ -67,7 +67,7 @@ a {
   justify-content: space-around;
 }
 
-h1 {
+h1, h2 {
   font-family: 'ProximaBold', sans-serif;
   margin: 10px;
   text-align: center;
@@ -94,11 +94,15 @@ li {
   background-color: #3778c2;
   color: white;
   padding: 5px;
-  float: right;
   border: solid white;
   margin-right: 10px;
   margin-bottom: 10px;
   font-weight: bold;
+  display: inline-block;
+}
+
+.float {
+  float: right;
 }
 
 .back {
