@@ -1,11 +1,13 @@
 @font-face {
-    font-family: Proxima;
-    src: url("./Proxima-Nova-Light.otf") format("opentype");
+  font-family: Proxima;
+  src: url("./Proxima-Nova-Light.otf") format("opentype");
 }
+
 @font-face {
-    font-family: ProximaBold;
-    src: url("./Proxima-Nova-Bold.otf") format("opentype");
+  font-family: ProximaBold;
+  src: url("./Proxima-Nova-Bold.otf") format("opentype");
 }
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -26,7 +28,7 @@ body {
 }
 
 .card {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   height: 100px;
   padding: 10px;
@@ -67,7 +69,8 @@ a {
   justify-content: space-around;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'ProximaBold', sans-serif;
   margin: 10px;
   text-align: center;
