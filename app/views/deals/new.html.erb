@@ -13,7 +13,8 @@
   </div>
 
   <div>
-    <p>Select at least one category</p>
+    <p>Select at least one category:</p>
+    <br>
     <ul>
       <%= form.collection_check_boxes(:groups, @categories, :id, :name) do |g| %>
         <li>
@@ -22,5 +23,5 @@
       <% end %>
     </ul>
   </div>
-  <%= form.submit "SUBMIT" %>
+  <%= form.submit "SUBMIT", class:"btn" %>
 <% end %>
