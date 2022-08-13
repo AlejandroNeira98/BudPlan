@@ -28,7 +28,7 @@ RSpec.describe 'Groups Index Page', type: :system do
   end
 
   it 'Shows the amount' do
-    find_link(href: "/groups/show/1").click
+    find_link(href: '/groups/show/1').click
     expect(page).to have_content(@subject.name) && have_content(@deal.amount)
   end
 end
