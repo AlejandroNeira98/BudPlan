@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag "header" %>
+<header>
+  <nav class="nav">
+    <div class="hamburger">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+
+    <div class="nav__link hide">
+      <%= link_to "All categories", groups_index_path %>
+      <%= link_to "Add a new category", groups_new_path %>
+      <%= link_to "Add a new transaction", deals_new_path %>
+    </div>
+  </nav>
+</header>
+
+<script>
+  document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.nav__link').classList.toggle('hide');
+  });
+</script>

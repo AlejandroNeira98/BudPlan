@@ -1,0 +1,22 @@
+<div style="display:flex" class="category">
+  <%= link_to "<", groups_index_path, class:"back" %>
+  <h1> <%= @category.name %> </h1>
+  <p> Total: <%= @total %> </p>
+</div>
+
+<% @deals.each do |deal| %>
+  <div  class="card">
+    <div style="display:flex; max-height:100%">
+      <div style="max-width:100px">
+        <%= image_tag(@category.icon, style:"width:100%; height:100%")%>
+      </div>
+      <div class="content">
+        <p> <%= deal.name %> </p>
+        <p class="date"> <%= deal.created_at.strftime("%d %B %Y") %> </p>
+      </div>
+    </div>
+    <p class="quantity"> $<%= deal.amount %> </p>
+  </div>
+<% end %>
+
+<%= link_to "add a new transaction", deals_new_path, class:"btn float" %>

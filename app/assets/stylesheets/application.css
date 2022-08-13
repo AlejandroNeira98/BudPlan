@@ -1,0 +1,148 @@
+@font-face {
+  font-family: Proxima;
+  src: url("./Proxima-Nova-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: ProximaBold;
+  src: url("./Proxima-Nova-Bold.otf") format("opentype");
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+  background-color: #434b5434;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+}
+
+.card p {
+  margin-top: 15px;
+  color: #434b54bc;
+}
+
+.content {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Proxima', sans-serif;
+}
+
+.date {
+  font-size: x-small;
+  color: #434b5461;
+  font-family: 'Proxima', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.quantity {
+  font-weight: bold;
+  color: black;
+}
+
+.category {
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+h1,
+h2 {
+  font-family: 'ProximaBold', sans-serif;
+  margin: 10px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 15px auto;
+}
+
+form > * {
+  margin-bottom: 15px;
+  font-family: 'Proxima', sans-serif;
+}
+
+li {
+  list-style: none;
+  margin: 2px 20px;
+}
+
+.btn {
+  background-color: #3778c2;
+  color: white;
+  padding: 5px;
+  border: solid white;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.float {
+  float: right;
+}
+
+.back {
+  background-color: #3778c2;
+  color: white;
+  border: solid white;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.devise {
+  background-color: white;
+  padding-left: 5px;
+  padding-right: 10px;
+  border-width: 1px;
+  border-style: inset;
+  border-color: #434b5467;
+  border-left: none;
+  border-right: none;
+}
+
+.devise > * {
+  margin: 0;
+}
+
+.devise > * > * {
+  width: 100%;
+  height: 25px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-color: #434b5467;
+  border-width: 1px;
+}
+
+.devise .first > * {
+  border-top: none;
+}
