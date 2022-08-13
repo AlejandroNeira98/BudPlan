@@ -8,7 +8,7 @@ class GroupsController < ApplicationController
   def show
     id = params[:id]
     @category = Group.find(id)
-    @deals = @category.deals.order('deals.created_at')
+    @deals = @category.deals.order('deals.created_at DESC')
     @total = 0.0
     @deals.each do |deal|
       @total += deal.amount
